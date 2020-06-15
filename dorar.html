@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+        <title>Cari Hadis Dorar</title>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="dorar.css">
+        <script type="text/javascript" src="jquery-1.2.6.min.js"></script>
+									<script type="text/javascript">
+										function cariHadis(){								
+									 $.getJSON("http://dorar.net/dorar_api.json?skey=" + $("#skey").attr("value") + "&callback=?", function(data){
+									 $("#dorar").html("");
+									 $.each(data.ahadith, function(index, item){
+								 	$("#dorar").append("<legend>Hasil Pencarian</legend> <span class='qalink'>" + item + "</span>");
+	  							});
+										});
+										}
+									
+
+					</script>
+    </head>
+    <body>
+	<div id="page-wrap"><div id="formx"><form>
+	 <h3>Hadis Digital Online</h3>
+		<span>Masukkan kata pencarian bahasa Arab</span>
+		<input type="search" id="skey" value=""  dir="rtl" class="textbox keyboardInput"> 
+		<input type="button" class="button" value="&#x2315;" onclick="cariHadis()"/>
+		</input>
+	 </div></div>
+	     
+	    
+	<fieldset  id="dorar"><legend>Hasil Pencarian</legend>   
+	    </fieldset>
+
+    </body>
+</html>

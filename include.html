@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="gayaku.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+<script src="bootstrap.min.js"></script> 
+<link rel="stylesheet" href="font.css">
+<script src="jquery.js"></script>
+<script src="index.js"></script></head>
+<body>
+<div class="panel" id="barpanel">
+  <input type="checkbox" class="cekMenu" id="cekMenu" onclick="menutogel('daftarMenu')">
+  <label for="cekMenu" class="togelIkonSisi" >
+    <div class="pemutar diagonal bagian-1">
+    </div>
+    <div class="pemutar horizontal">
+    </div>
+    <div class="pemutar diagonal bagian-2">
+    </div>
+		</label>
+  <div class="bnav">
+    <button id="bacax" class="button" onclick="bacatogel('xbacax')">baca online</button>
+    <input type="button" value="❎"  class="button" onclick= "keluar()">
+				</div>
+</div>
+<div tabindex="100" id="daftarMenu">
+  <ul id="menu-hdo"> 
+  			<div id= "logo-menu">
+ 			 <div class="kontainer marun-gelap">
+ 			 <div class="spasi tengah">
+					<img class="bundar" src="logo.png" alt="logo" style="width:70%" onclick="openhtml('profil.html')">
+ 			 <br><span >hadis digital online all in one</span>
+ 			 </div></div></div>
+					<li><a href="#">🏠BERANDA</a></li> 
+					<li><a href="#" class="panah">PENCARI HADIS ONLINE</a> 
+						 <ul>
+		    				<li><a target="layar" href="http://carihadis.com">Hadis 55 Kitab</a></li> 
+									 <li><a target="layar" href="https://gethadith.web.app">Hadis 14 Imam</a></li>
+								 	<li><a target="layar" href="https://www.islambook.com/hadith/%D8%A7%D9%84%D8%AD%D8%AF%D9%8A%D8%AB/%D8%A7%D9%84%D8%AD%D8%AF%D9%8A%D8%AB_%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%89_%D8%A7%D9%84%D8%B4%D8%B1%D9%8A%D9%81">Hadis 9 Imam</a></li>
+									 <li><a target="layar" href="http://hadithportal.com">Hadis 243 Kitab</a></li>
+										<li><a target="layar" href="https://dorar.net/hadith-category">Dorar Net</a></li>	     
+										<li><a target="layar" href="https://sunnah.com/">Sunnah Com</a></li>
+			  	 </ul></li>
+					<li><a href="#" class="panah">PERPUSTAKAAN HADIS ONLINE</a> 
+							<ul>
+							  <li><a target="layar" href="http://tafsirq.com/hadits">Perpustakaan Hadis Tafsirq</a></li> 
+									<li><a target="layar" href="http://www.al-eman.com/%D8%A7%D9%84%D9%83%D8%AA%D8%A8/%D8%A7%D9%84%D8%AD%D8%AF%D9%8A%D8%AB+%D9%88%D8%B9%D9%84%D9%88%D9%85%D9%87/c702&h&p4">Perpustakaan Hadis al-Eman</a></li>
+									<li><a target="layar" href="http://shamela.ws/index.php/category/125">Perpustakaan Hadis Shamela</a></li>
+									<li><a target="layar" href="http://waqfeya.com/category.php?cid=45">Perpustakaan Hadis Waqfeya</a></li>
+		   			 <li><a target="layar" href="https://www.islamspirit.com/islamspirit_ebooks_01.php">Perpustakaan Hadis Islam Spirit</a></li>
+									<li><a target="layar" href="https://islamweb.net/ar/library/index.php?page=bookslist&subject=1">Perpustakaan Hadis Islamweb</a></li>
+									<li><a target="layar" href="https://islamweb.net/ar/library/index.php?page=bookslist&subject=7">Perpustakaan Syarah Hadis Islamweb</a></li>
+						</ul></li> 
+	   	<li><a href="#" class="panah">TAUTAN UNDUH EBOOK PDF</a>
+	      <ul> 
+	   					<li><a href="https://archive.org/compress/IslamSpirit-Mawsoaat-Hadith-PDF-01/formats=IMAGE%20CONTAINER%20PDF&file=/IslamSpirit-Mawsoaat-Hadith-PDF-01.zip">Mausu'ah Hadis v.3 bagian-1</a></li>       
+	   					<li><a href="https://archive.org/compress/IslamSpirit-Mawsoaat-Hadith-PDF-02/formats=IMAGE%20CONTAINER%20PDF&file=/IslamSpirit-Mawsoaat-Hadith-PDF-02.zip">Mausu'ah Hadis v.3 bagian-2</a></li>       
+	       <li><a target="layar" href="#">Ṣaḥiḥ al-Bukhāry</a></li> 
+									<li><a target="layar" href="#">Ṣaḥīḥ Muslim</a></li>
+									<li><a target="layar" href="#">Sunan al-Nasā’iy</a></li>
+	       <li><a target="layar" href="#">Sunan Abī Dāwūd</a></li> 
+	       <li><a target="layar" href="#">Sunan al-Tirmīżiy</a></li> 
+									<li><a target="layar" href="#">Sunan Ibn Mājah</a></li>
+									<li><a target="layar" href="muwatta malik.html">Al-Muwaṭṭa' li Imām Mālik</a></li>
+	       <li><a target="layar" href="musnad ahmad.html">Al-Musnad li Imām Aḥmad </a></li> 
+									<li><a target="layar" href="#">Sunan al-Dārimiy</a></li>
+	      	</ul></li>
+ 			<li><a href="#" class="panah">TAUTAN UNDUH EBOOK EPUB</a> 
+								<ul>     
+		 	    	<li><a href="http://www.badrweb.net/islamspirit/phones/mawsoaat_hadeeth_phn_03.zip">ePUB Musū'ah Ḥadīṡ v.3</a></li> 
+     		  <li><a href="http://d.shamela.ws/epubs/016/1681.epub">ePUB Ṣaḥiḥ al-Bukhāry</a></li> 
+									<li><a href="http://d.shamela.ws/epubs/017/1727.epub">ePUB Ṣaḥīḥ Muslim</a></li>
+									<li><a href="http://d.shamela.ws/epubs/008/829.epub">ePUB Sunan al-Nasā’iy</a></li>
+	       <li><a href="http://d.shamela.ws/epubs/117/117359.epub">ePUB Sunan Abī Dāwūd</a></li> 
+	       <li><a href="http://d.shamela.ws/epubs/078/7895.epub">ePUB Sunan al-Tirmīżiy</a></li> 
+									<li><a href="http://d.shamela.ws/epubs/981/98138.epub">ePUB Sunan Ibn Mājah</a></li>
+									<li><a href="http://d.shamela.ws/epubs/281/28107.epub">ePUB Al-Muwaṭṭa' li Imām Mālik</a></li>
+	       <li><a href="http://d.shamela.ws/epubs/257/25794.epub">ePUB Al-Musnad li Imām Aḥmad </a></li> 
+									<li><a href="http://d.shamela.ws/epubs/217/21795.epub">ePUB Sunan al-Dārimiy</a></li>
+				</ul></li>      
+				<li><a href="#" class="panah">TAUTAN UNDUH EBOOK CHM</a> 
+						<ul>     
+    					<li><a href="https://github.com/yshtemp/ISD/releases/download/untagged-a59fe32cbb0aab9e5c25/mawsoaat_hadeeth_03.chm">Mausū‘ah Ḥadīṡ 3.0 CHM</a></li> 
+    					<li><a href="http://download1608.mediafire.com/0glpyqwu5dkg/qt3j6pplzt222s2/HaditsWeb7.0-CHM.zip">HaditsWeb 7.0 CHM</a></li> 
+   					 <li><a href="https://drive.google.com/drive/folders/1NG0ziqAVMf4cKk6IMNiO2Y3HNqcb1E11">Kitab 9 Imam CHM</a></li>
+			 					<li><a href="https://drive.google.com/open?id=116SR68LJJGSW7HzJXhQsNrgqDiewtsqn">HR. Bukhari CHM</a></li>
+	  						<li><a href="https://drive.google.com/open?id=1CfvSw4utVpQX-a3lKIOqgph8JORclAd9">HR. Muslim CHM</a></li> 
+			 					<li><a href="https://drive.google.com/open?id=1gmhIvDJ9eFMpWE2-GIOmpBwgdQzdGU1I">HR. Nasa'i CHM</a></li>
+	   					<li><a href="https://drive.google.com/open?id=1lbfdROAnyp59B_7HoHW6DjY4JdecAT68">HR. Abu Daud CHM</a></li> 
+		 						<li><a href="https://drive.google.com/open?id=1WFNK1uRZ4hGVpC6O0x9gmTM4UthKUejO">HR. Tirmizi CHM</a></li>
+	   					<li><a href="https://drive.google.com/open?id=12gi-ynQKn_GdiiUY-P232Vif_szfZRpK">HR. Ibnu Majah CHM</a></li> 
+ 		 					<li><a href="https://drive.google.com/open?id=16K5r92-ncP4JamBq3kUBHoKea2m0AhJc">HR. Darimi CHM</a></li>
+	   					<li><a href="https://drive.google.com/open?id=1FB7swpYfZpdr854WvdXVPAX9wsSsOuiE">HR. Malik CHM</a></li>   
+   			</ul></li>   
+				<li><a href="#" class="panah">TAUTAN UNDUH EBOOK FORMAT LAIN</a> 
+						<ul>     
+    					<li><a href="http://www.badrweb.net/islamspirit/doc/mawsoaat_hadeeth_doc_03.zip">Mausū‘ah Ḥadīṡ 3.0 DOC</a></li> 
+    					<li><a href="http://www.badrweb.net/islamspirit/downloads_cs/mawsoaat_hadeeth_bok_03.zip">Mausū‘ah Ḥadīṡ 3.0 BOK</a></li> 
+	       <li><a target="layar" href="https://github.com/ceefour/hadith-islamware/blob/master/hadith-sahih-bukhari.utf8.csv">Ṣaḥiḥ al-Bukhāry CSV/XLS</a></li> 
+									<li><a target="layar" href="https://github.com/ceefour/hadith-islamware/blob/master/hadith-sahih-muslim.utf8.csv">Ṣaḥīḥ Muslim CSV/XLS</a></li>
+									<li><a target="layar" href="https://github.com/ceefour/hadith-islamware/blob/master/hadith-sunan-al-nasai.utf8.csv">Sunan al-Nasā’iy CSV/XLS</a></li>
+	       <li><a target="layar" href="https://github.com/ceefour/hadith-islamware/blob/master/hadith-sunan-abu-dawud.utf8.csv">Sunan Abī Dāwūd CSV/XLS</a></li> 
+	       <li><a target="layar" href="https://github.com/ceefour/hadith-islamware/blob/master/hadith-sunan-al-tirmidhi.utf8.csv">Sunan al-Tirmīżiy CSV/XLS</a></li> 
+									<li><a target="layar" href="https://github.com/ceefour/hadith-islamware/blob/master/hadith-sunan-ibn-maja.utf8.csv">Sunan Ibn Mājah CSV/XLS</a></li>
+									<li><a target="layar" href="https://github.com/ceefour/hadith-islamware/blob/master/hadith-maliks-muwatta.utf8.csv">Muwaṭṭa Mālik CSV/XLS</a></li>
+	       <li><a target="layar" href="https://github.com/ceefour/hadith-islamware/blob/master/hadith-musnad-ahmad-ibn-hanbal.utf8.csv">Musnad Aḥmad CSV/XLS</a></li> 
+									<li><a target="layar" href="https://github.com/ceefour/hadith-islamware/blob/master/hadith-sunan-al-darimi.utf8.csv">Sunan al-Dārimiy CSV/XLS</a></li>
+   			</ul></li>   
+   <li><a href="#" class="panah">TAUTAN UNDUH APLIKASI ANDROID</a>
+     <ul>
+	     			<li><a href="#">Aplikasi Hadis Digital Online</a></li> 
+		    			<li><a href="https://play.google.com/store/apps/details?id=net.islamweb.hadith">Ensiklopedi Hadis Islamweb</a></li> 
+	     			<li><a href="https://play.google.com/store/apps/details?id=com.saltanera.hadits&hl=in&referrer=utm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_term%3Densiklopedi.hadis&pcampaignid=APPU_1_9EAAXsDcLsWe9QPfmL_wBg">Ensiklopedi Hadis 9 Imam</a></li>
+	     			<li><a href="https://play.google.com/store/apps/details?id=com.zad.hadith">Ensiklopedi Hadis DorarNet</a></li> 
+					 			<li><a href="https://play.google.com/store/apps/details?id=org.sonna.www.sonna&hl=en">Ensiklopedi Hadis Al-Azhar</a></li>
+	     			<li><a href="https://play.google.com/store/apps/details?id=com.ilemona.hdth&hl=en">Ensiklopedi Hadis Sahih</a></li> 
+					 			<li><a href="https://play.google.com/store/apps/details?id=com.thedawah.hadith">Aplikasi Hadis Sunnah One</a></li>
+					 			<li><a href="https://play.google.com/store/apps/details?id=com.greentech.hadith">Aplikasi Hadis 8 Imam + 6 Kitab</a></li>
+			   			<li><a href="https://play.google.com/store/apps/details?id=com.arabiait.sunna">Aplikasi Kutub Tis'ah</a></li>
+	     			<li><a href="https://play.google.com/store/apps/details?id=org.qcharity.gameaelhadith">Aplikasi Jami' al-Hadis</a></li> 
+						</ul></li>
+			<li><a href="#" class="panah">TAUTAN UNDUH APLIKASI DESKTOP</a> 
+						<ul>     
+    				<li><a href="https://d33.usercdn.com/d/yilzlxrwtz2fvxijcduy5fcga2qnn22vcuref5vaj647zq7zz5m3yoqmyfyks44gms464ntm/Hadist_9_Imam_Portable_v1_2_0_0.exe">Kitab 9 Imam Lidwa (45 mb)</a></li> 
+	   				<li><a href="http://www.badrweb.net/islamspirit/dn_ex/mawsoaat_hadeeth_exe_03.zip">Mausu'ah Hadis v.3 (111 mb)</a></li>   				<li><a href="http://haditssoft.netne.net/haditssoft_4.0.0.0.zip">Hadits Soft (35,79 mb)</a></li>
+			 				<li><a href="https://www.madarisweb.com/download/2526/Jaame_ul_Hadeeth.zip">Jami' Hadis (300 mb)</a></li>
+	  					<li><a href="http://www.islamweb.net/redirectlink.php?dtype=3">Hadis Islamweb (545 mb)</a></li> 
+			 				<li><a href="http://www.ihsanetwork.org/downloads/2010-HadithDVD-production.iso">Ensklopedi Hadis (1,3 gb)</a></li>
+	   				<li><a href="http://www.archive.org/download/GK4.5/GK4.5.zip">Jawami' Kalim (1,5 gb)</a></li>  
+				</ul></li> 
+ </ul></div></div>
+
+<div id="xbacax" class="accordion">
+	<section class="accordion-item">
+		<h6>Sahih Bukhari</h6>
+		<div class="accordion-item-content">
+  		<ul><li><a target="layar" "href="https://archive.org/stream/sa71mir_gmail_1_201605/1-%20%D8%B5%D8%AD%D9%8A%D8%AD%20%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A%20%D8%B7%D8%A8%D8%B9%D8%A9%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D9%88%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%81%D9%82%D8%A9%20%D9%84%D9%84%D9%86%D8%B3%D8%AE%D8%A9%20%D8%A7%D9%84%D8%B3%D9%84%D8%B7%D8%A7%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AC%D8%B2%D8%A1%20%20%20%D8%A7%D9%84%D8%A3%D9%88%D9%84">Jilid 1</a></li>
+   			<li><a target="layar" href="https://archive.org/stream/sa71mir_gmail_1_201605/2-%D8%B5%D8%AD%D9%8A%D8%AD%20%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A%20%D8%B7%D8%A8%D8%B9%D8%A9%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D9%88%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%81%D9%82%D8%A9%20%D9%84%D9%84%D9%86%D8%B3%D8%AE%D8%A9%20%D8%A7%D9%84%D8%B3%D9%84%D8%B7%D8%A7%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AC%D8%B2%D8%A1%20%20%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A">Jilid 2</a></li>
+     	<li><a target="layar" href="https://archive.org/stream/sa71mir_gmail_1_201605/3-%20%D8%B5%D8%AD%D9%8A%D8%AD%20%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A%20%D8%B7%D8%A8%D8%B9%D8%A9%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D9%88%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%81%D9%82%D8%A9%20%D9%84%D9%84%D9%86%D8%B3%D8%AE%D8%A9%20%D8%A7%D9%84%D8%B3%D9%84%D8%B7%D8%A7%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AC%D8%B2%D8%A1%20%20%20%20%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB">Jilid 3</a></li>
+     	<li><a target="layar" href="https://archive.org/stream/sa71mir_gmail_1_201605/4-%20%D8%B5%D8%AD%D9%8A%D8%AD%20%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A%20%D8%B7%D8%A8%D8%B9%D8%A9%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D9%88%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%81%D9%82%D8%A9%20%D9%84%D9%84%D9%86%D8%B3%D8%AE%D8%A9%20%D8%A7%D9%84%D8%B3%D9%84%D8%B7%D8%A7%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AC%D8%B2%D8%A1%20%20%20%20%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9">Jilid 4</a></li>
+     	<li><a target="layar" href="https://archive.org/stream/sa71mir_gmail_1_201605/5-%20%D8%B5%D8%AD%D9%8A%D8%AD%20%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A%20%D8%B7%D8%A8%D8%B9%D8%A9%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D9%88%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%81%D9%82%D8%A9%20%D9%84%D9%84%D9%86%D8%B3%D8%AE%D8%A9%20%D8%A7%D9%84%D8%B3%D9%84%D8%B7%D8%A7%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AC%D8%B2%D8%A1%20%20%20%20%D8%A7%D9%84%D8%AE%D8%A7%D9%85%D8%B3">Jilid 5</a></li>
+     	<li><a target="layar" href="https://archive.org/stream/sa71mir_gmail_1_201605/6-%20%D8%B5%D8%AD%D9%8A%D8%AD%20%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A%20%D8%B7%D8%A8%D8%B9%D8%A9%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D9%88%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%81%D9%82%D8%A9%20%D9%84%D9%84%D9%86%D8%B3%D8%AE%D8%A9%20%D8%A7%D9%84%D8%B3%D9%84%D8%B7%D8%A7%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AC%D8%B2%D8%A1%20%20%20%20%D8%A7%D9%84%D8%B3%D8%A7%D8%AF%D8%B3">Jilid 6</a></li>
+     	<li><a target="layar" href="https://archive.org/stream/sa71mir_gmail_1_201605/7-%20%D8%B5%D8%AD%D9%8A%D8%AD%20%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A%20%D8%B7%D8%A8%D8%B9%D8%A9%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D9%88%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%81%D9%82%D8%A9%20%D9%84%D9%84%D9%86%D8%B3%D8%AE%D8%A9%20%D8%A7%D9%84%D8%B3%D9%84%D8%B7%D8%A7%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AC%D8%B2%D8%A1%20%20%20%20%D8%A7%D9%84%D8%B3%D8%A7%D8%A8%D8%B9">Jilid 7</a></li>
+     	<li><a target="layar" href="https://archive.org/stream/sa71mir_gmail_1_201605/8-%20%D8%B5%D8%AD%D9%8A%D8%AD%20%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A%20%D8%B7%D8%A8%D8%B9%D8%A9%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D9%88%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%81%D9%82%D8%A9%20%D9%84%D9%84%D9%86%D8%B3%D8%AE%D8%A9%20%D8%A7%D9%84%D8%B3%D9%84%D8%B7%D8%A7%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AC%D8%B2%D8%A1%20%20%20%20%D8%A7%D9%84%D8%AB%D8%A7%D9%85%D9%86">Jilid 8</a></li>
+     	<li><a target="layar" href="https://archive.org/stream/sa71mir_gmail_1_201605/9-%20%D8%B5%D8%AD%D9%8A%D8%AD%20%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A%20%D8%B7%D8%A8%D8%B9%D8%A9%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D9%88%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%81%D9%82%D8%A9%20%D9%84%D9%84%D9%86%D8%B3%D8%AE%D8%A9%20%D8%A7%D9%84%D8%B3%D9%84%D8%B7%D8%A7%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AC%D8%B2%D8%A1%20%20%20%20%D8%A7%D9%84%D8%AA%D8%A7%D8%B3%D8%B9">Jilid 9</a></li>
+  		</ul>
+		</div> 
+	</section>
+	<section class="accordion-item">
+		<h6>Sahih Muslim</h6>
+		<div class="accordion-item-content delapan">
+  		<ul><li><a target="layar" href="https://archive.org/stream/3_20191217_20191217_1520/%D8%B5%D8%AD%D9%8A%D8%AD%20%D9%85%D8%B3%D9%84%D9%85%20%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%201">Jilid 1</a></li>
+   			<li><a target="layar" href="https://archive.org/stream/3_20191217_20191217_1520/%D8%B5%D8%AD%D9%8A%D8%AD%20%D9%85%D8%B3%D9%84%D9%85%20%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%202">Jilid 2</a></li>
+     <li><a target="layar" href="https://archive.org/stream/3_20191217_20191217_1520/%D8%B5%D8%AD%D9%8A%D8%AD%20%D9%85%D8%B3%D9%84%D9%85%20%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%203">Jilid 3</a></li>
+     <li><a target="layar" href="https://archive.org/stream/3_20191217_20191217_1520/%D8%B5%D8%AD%D9%8A%D8%AD%20%D9%85%D8%B3%D9%84%D9%85%20%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%204">Jilid 4</a></li>
+     <li><a target="layar" href="https://archive.org/stream/3_20191217_20191217_1520/%D8%B5%D8%AD%D9%8A%D8%AD%20%D9%85%D8%B3%D9%84%D9%85%20%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%205">Jilid 5</a></li>
+     <li><a target="layar" href="https://archive.org/stream/3_20191217_20191217_1520/%D8%B5%D8%AD%D9%8A%D8%AD%20%D9%85%D8%B3%D9%84%D9%85%20%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%206">Jilid 6</a></li>
+     <li><a target="layar" href="https://archive.org/stream/3_20191217_20191217_1520/%D8%B5%D8%AD%D9%8A%D8%AD%20%D9%85%D8%B3%D9%84%D9%85%20%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%207">Jilid 7</a></li>
+     <li><a target="layar" href="https://archive.org/stream/3_20191217_20191217_1520/%D8%B5%D8%AD%D9%8A%D8%AD%20%D9%85%D8%B3%D9%84%D9%85%20%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%208">Jilid 8</a></li>
+  		</ul>
+		</div> 
+	</section>
+	<section class="accordion-item">
+		<h6>Sunan Nasa'i</h6>
+		<div class="accordion-item-content sembilan">
+  		<ul><li><a target="layar" href="https://archive.org/stream/1_20191217_20191217_1341/%D9%83%D8%AA%D8%A7%D8%A8%20%D8%A7%D9%84%D9%85%D8%AC%D8%AA%D8%A8%D9%89%20%D8%A7%D9%84%D8%B3%D9%86%D9%86%20%D8%A7%D9%84%D8%B5%D8%BA%D8%B1%D9%89%20%D8%B3%D9%86%D9%86%20%D8%A7%D9%84%D9%86%D8%B3%D8%A7%D8%A6%D9%8A%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%201">Jilid 1</a></li>
+   			<li><a target="layar" href="https://archive.org/stream/1_20191217_20191217_1341/%D9%83%D8%AA%D8%A7%D8%A8%20%D8%A7%D9%84%D9%85%D8%AC%D8%AA%D8%A8%D9%89%20%D8%A7%D9%84%D8%B3%D9%86%D9%86%20%D8%A7%D9%84%D8%B5%D8%BA%D8%B1%D9%89%20%D8%B3%D9%86%D9%86%20%D8%A7%D9%84%D9%86%D8%B3%D8%A7%D8%A6%D9%8A%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%202">Jilid 2</a></li>
+   			<li><a target="layar" href="https://archive.org/stream/1_20191217_20191217_1341/%D9%83%D8%AA%D8%A7%D8%A8%20%D8%A7%D9%84%D9%85%D8%AC%D8%AA%D8%A8%D9%89%20%D8%A7%D9%84%D8%B3%D9%86%D9%86%20%D8%A7%D9%84%D8%B5%D8%BA%D8%B1%D9%89%20%D8%B3%D9%86%D9%86%20%D8%A7%D9%84%D9%86%D8%B3%D8%A7%D8%A6%D9%8A%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%203">Jilid 3</a></li>
+   			<li><a target="layar" href="https://archive.org/stream/1_20191217_20191217_1341/%D9%83%D8%AA%D8%A7%D8%A8%20%D8%A7%D9%84%D9%85%D8%AC%D8%AA%D8%A8%D9%89%20%D8%A7%D9%84%D8%B3%D9%86%D9%86%20%D8%A7%D9%84%D8%B5%D8%BA%D8%B1%D9%89%20%D8%B3%D9%86%D9%86%20%D8%A7%D9%84%D9%86%D8%B3%D8%A7%D8%A6%D9%8A%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%204">Jilid 4</a></li>
+   			<li><a target="layar" href="https://archive.org/stream/1_20191217_20191217_1341/%D9%83%D8%AA%D8%A7%D8%A8%20%D8%A7%D9%84%D9%85%D8%AC%D8%AA%D8%A8%D9%89%20%D8%A7%D9%84%D8%B3%D9%86%D9%86%20%D8%A7%D9%84%D8%B5%D8%BA%D8%B1%D9%89%20%D8%B3%D9%86%D9%86%20%D8%A7%D9%84%D9%86%D8%B3%D8%A7%D8%A6%D9%8A%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%205">Jilid 5</a></li>
+     <li><a target="layar" href="https://archive.org/stream/1_20191217_20191217_1341/%D9%83%D8%AA%D8%A7%D8%A8%20%D8%A7%D9%84%D9%85%D8%AC%D8%AA%D8%A8%D9%89%20%D8%A7%D9%84%D8%B3%D9%86%D9%86%20%D8%A7%D9%84%D8%B5%D8%BA%D8%B1%D9%89%20%D8%B3%D9%86%D9%86%20%D8%A7%D9%84%D9%86%D8%B3%D8%A7%D8%A6%D9%8A%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%206">Jilid 6</a></li>
+     <li><a target="layar" href="https://archive.org/stream/1_20191217_20191217_1341/%D9%83%D8%AA%D8%A7%D8%A8%20%D8%A7%D9%84%D9%85%D8%AC%D8%AA%D8%A8%D9%89%20%D8%A7%D9%84%D8%B3%D9%86%D9%86%20%D8%A7%D9%84%D8%B5%D8%BA%D8%B1%D9%89%20%D8%B3%D9%86%D9%86%20%D8%A7%D9%84%D9%86%D8%B3%D8%A7%D8%A6%D9%8A%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%207">Jilid 7</a></li>
+     <li><a target="layar" href="https://archive.org/stream/1_20191217_20191217_1341/%D9%83%D8%AA%D8%A7%D8%A8%20%D8%A7%D9%84%D9%85%D8%AC%D8%AA%D8%A8%D9%89%20%D8%A7%D9%84%D8%B3%D9%86%D9%86%20%D8%A7%D9%84%D8%B5%D8%BA%D8%B1%D9%89%20%D8%B3%D9%86%D9%86%20%D8%A7%D9%84%D9%86%D8%B3%D8%A7%D8%A6%D9%8A%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%208">Jilid 8</a></li>
+     <li><a target="layar" href="https://archive.org/stream/1_20191217_20191217_1341/%D9%83%D8%AA%D8%A7%D8%A8%20%D8%A7%D9%84%D9%85%D8%AC%D8%AA%D8%A8%D9%89%20%D8%A7%D9%84%D8%B3%D9%86%D9%86%20%D8%A7%D9%84%D8%B5%D8%BA%D8%B1%D9%89%20%D8%B3%D9%86%D9%86%20%D8%A7%D9%84%D9%86%D8%B3%D8%A7%D8%A6%D9%8A%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%209">Jilid 9</a></li>
+  		</ul>
+		</div> 
+	</section>
+	<section class="accordion-item">
+		<h6>Sunan Abu Daud</h6>
+		<div class="accordion-item-content delapan">
+  		<ul><li><a target="layar" href="https://archive.org/stream/3_20191217/%D8%A7%D9%84%D8%B3%D9%86%D9%86%20%D9%84%D9%84%D8%A7%D9%85%D8%A7%D9%85%20%D8%A3%D8%A8%D9%8A%20%D8%AF%D8%A7%D9%88%D8%AF%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%201">Jilid 1</a></li>
+   			<li><a target="layar" href="https://archive.org/stream/3_20191217/%D8%A7%D9%84%D8%B3%D9%86%D9%86%20%D9%84%D9%84%D8%A7%D9%85%D8%A7%D9%85%20%D8%A3%D8%A8%D9%8A%20%D8%AF%D8%A7%D9%88%D8%AF%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%202">Jilid 2</a></li>
+   			<li><a target="layar" href="https://archive.org/stream/3_20191217/%D8%A7%D9%84%D8%B3%D9%86%D9%86%20%D9%84%D9%84%D8%A7%D9%85%D8%A7%D9%85%20%D8%A3%D8%A8%D9%8A%20%D8%AF%D8%A7%D9%88%D8%AF%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%203">Jilid 3</a></li>
+     <li><a target="layar" href="https://archive.org/stream/3_20191217/%D8%A7%D9%84%D8%B3%D9%86%D9%86%20%D9%84%D9%84%D8%A7%D9%85%D8%A7%D9%85%20%D8%A3%D8%A8%D9%8A%20%D8%AF%D8%A7%D9%88%D8%AF%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%204">Jilid 4</a></li>
+     <li><a target="layar" href="https://archive.org/stream/3_20191217/%D8%A7%D9%84%D8%B3%D9%86%D9%86%20%D9%84%D9%84%D8%A7%D9%85%D8%A7%D9%85%20%D8%A3%D8%A8%D9%8A%20%D8%AF%D8%A7%D9%88%D8%AF%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%205">Jilid 5</a></li>
+     <li><a target="layar" href="https://archive.org/stream/3_20191217/%D8%A7%D9%84%D8%B3%D9%86%D9%86%20%D9%84%D9%84%D8%A7%D9%85%D8%A7%D9%85%20%D8%A3%D8%A8%D9%8A%20%D8%AF%D8%A7%D9%88%D8%AF%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%206">Jilid 6</a></li>
+     <li><a target="layar" href="https://archive.org/stream/3_20191217/%D8%A7%D9%84%D8%B3%D9%86%D9%86%20%D9%84%D9%84%D8%A7%D9%85%D8%A7%D9%85%20%D8%A3%D8%A8%D9%8A%20%D8%AF%D8%A7%D9%88%D8%AF%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%207">Jilid 7</a></li>
+     <li><a target="layar" href="https://archive.org/stream/3_20191217/%D8%A7%D9%84%D8%B3%D9%86%D9%86%20%D9%84%D9%84%D8%A7%D9%85%D8%A7%D9%85%20%D8%A3%D8%A8%D9%8A%20%D8%AF%D8%A7%D9%88%D8%AF%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%208">Jilid 8</a></li>
+  		</ul>
+		</div> 
+	</section>
+	<section class="accordion-item">
+		<h6>Sunan Tirmizi</h6>
+		<div class="accordion-item-content lima">
+  		<ul><li><a target="layar" href="https://archive.org/stream/3_20191217_20191217_1316/%D8%B3%D9%86%D9%86%20%D8%A7%D9%84%D8%AA%D8%B1%D9%85%D8%B0%D9%8A%20%D9%88%D9%87%D9%88%20%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%20%D8%A7%D9%84%D9%83%D8%A8%D9%8A%D8%B1%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%201">Jilid 1</a></li>
+   			<li><a target="layar" href="https://archive.org/stream/3_20191217_20191217_1316/%D8%B3%D9%86%D9%86%20%D8%A7%D9%84%D8%AA%D8%B1%D9%85%D8%B0%D9%8A%20%D9%88%D9%87%D9%88%20%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%20%D8%A7%D9%84%D9%83%D8%A8%D9%8A%D8%B1%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%202">Jilid 2</a></li>
+     <li><a target="layar" href="https://archive.org/stream/3_20191217_20191217_1316/%D8%B3%D9%86%D9%86%20%D8%A7%D9%84%D8%AA%D8%B1%D9%85%D8%B0%D9%8A%20%D9%88%D9%87%D9%88%20%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%20%D8%A7%D9%84%D9%83%D8%A8%D9%8A%D8%B1%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%203">Jilid 3</a></li>
+     <li><a target="layar" href="https://archive.org/stream/3_20191217_20191217_1316/%D8%B3%D9%86%D9%86%20%D8%A7%D9%84%D8%AA%D8%B1%D9%85%D8%B0%D9%8A%20%D9%88%D9%87%D9%88%20%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%20%D8%A7%D9%84%D9%83%D8%A8%D9%8A%D8%B1%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%204">Jilid 4</a></li>
+     <li><a target="layar" href="https://archive.org/stream/3_20191217_20191217_1316/%D8%B3%D9%86%D9%86%20%D8%A7%D9%84%D8%AA%D8%B1%D9%85%D8%B0%D9%8A%20%D9%88%D9%87%D9%88%20%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%20%D8%A7%D9%84%D9%83%D8%A8%D9%8A%D8%B1%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%205">Jilid 5</a></li>
+  		</ul>
+		</div> 
+	</section>
+	<section class="accordion-item">
+		<h6>Sunan Ibnu Majah</h6>
+		<div class="accordion-item-content empat">
+  		<ul><li><a target="layar" href="https://archive.org/stream/3_20191217_201912/%D8%A7%D9%84%D8%B3%D9%86%D9%86%20%D8%A7%D8%A8%D9%86%20%D9%85%D8%A7%D8%AC%D9%87%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%201">Jilid 1</a></li>
+   			<li><a target="layar" href="https://archive.org/stream/3_20191217_201912/%D8%A7%D9%84%D8%B3%D9%86%D9%86%20%D8%A7%D8%A8%D9%86%20%D9%85%D8%A7%D8%AC%D9%87%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%202">Jilid 2</a></li>
+     <li><a target="layar" href="https://archive.org/stream/3_20191217_201912/%D8%A7%D9%84%D8%B3%D9%86%D9%86%20%D8%A7%D8%A8%D9%86%20%D9%85%D8%A7%D8%AC%D9%87%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%203">Jilid 3</a></li>
+     <li><a target="layar" href="https://archive.org/stream/3_20191217_201912/%D8%A7%D9%84%D8%B3%D9%86%D9%86%20%D8%A7%D8%A8%D9%86%20%D9%85%D8%A7%D8%AC%D9%87%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%204">Jilid 4</a></li>
+  		</ul>
+		</div> 
+	</section>
+	<section class="accordion-item">
+		<h6>Muwatta' Malik</h6>
+		<div class="accordion-item-content tiga">
+  		<ul><li><a target="layar" href="https://archive.org/stream/2_20191217_20191217_1355/%D8%A7%D9%84%D9%85%D9%88%D8%B7%D8%A3%20%D8%A8%D8%B1%D9%88%D8%A7%D9%8A%D8%A9%20%D8%A3%D8%A8%D9%8A%20%D9%85%D8%B5%D8%B9%D8%A8%20%D8%A7%D9%84%D8%B2%D9%87%D8%B1%D9%8A%20%D9%85%D9%82%D8%A7%D8%B1%D9%86%D8%A9%20%D8%A8%D8%B1%D9%88%D8%A7%D9%8A%D8%A9%20%D9%8A%D8%AD%D9%8A%D9%89%20%D8%A8%D9%86%20%D9%8A%D8%AD%D9%8A%D9%89%20%D8%A7%D9%84%D9%84%D9%8A%D8%AB%D9%8A%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%201">Jilid 1</a></li>
+   			<li><a target="layar" href="https://archive.org/stream/2_20191217_20191217_1355/%D8%A7%D9%84%D9%85%D9%88%D8%B7%D8%A3%20%D8%A8%D8%B1%D9%88%D8%A7%D9%8A%D8%A9%20%D8%A3%D8%A8%D9%8A%20%D9%85%D8%B5%D8%B9%D8%A8%20%D8%A7%D9%84%D8%B2%D9%87%D8%B1%D9%8A%20%D9%85%D9%82%D8%A7%D8%B1%D9%86%D8%A9%20%D8%A8%D8%B1%D9%88%D8%A7%D9%8A%D8%A9%20%D9%8A%D8%AD%D9%8A%D9%89%20%D8%A8%D9%86%20%D9%8A%D8%AD%D9%8A%D9%89%20%D8%A7%D9%84%D9%84%D9%8A%D8%AB%D9%8A%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%202">Jilid 2</a></li>
+     	<li><a target="layar" href="https://archive.org/stream/2_20191217_20191217_1355/%D8%A7%D9%84%D9%85%D9%88%D8%B7%D8%A3%20%D8%A8%D8%B1%D9%88%D8%A7%D9%8A%D8%A9%20%D8%A3%D8%A8%D9%8A%20%D9%85%D8%B5%D8%B9%D8%A8%20%D8%A7%D9%84%D8%B2%D9%87%D8%B1%D9%8A%20%D9%85%D9%82%D8%A7%D8%B1%D9%86%D8%A9%20%D8%A8%D8%B1%D9%88%D8%A7%D9%8A%D8%A9%20%D9%8A%D8%AD%D9%8A%D9%89%20%D8%A8%D9%86%20%D9%8A%D8%AD%D9%8A%D9%89%20%D8%A7%D9%84%D9%84%D9%8A%D8%AB%D9%8A%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%203">Jilid 3</a></li>
+  		</ul>
+		</div> 
+	</section>
+	<section class="accordion-item">
+		<h6>Sunan Darimi</h6>
+		<div class="accordion-item-content tiga">
+  		<ul><li><a target="layar" href="https://archive.org/stream/1_20191217_20191217_1349/%D8%A7%D9%84%D9%85%D8%B3%D9%86%D8%AF%20%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D9%85%D9%8A%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%201">Jilid 1</a></li>
+      <li><a target="layar" href="https://archive.org/stream/1_20191217_20191217_1349/%D8%A7%D9%84%D9%85%D8%B3%D9%86%D8%AF%20%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D9%85%D9%8A%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%202">Jilid 2</a></li>
+     		<li><a target="layar" href="https://archive.org/stream/1_20191217_20191217_1349/%D8%A7%D9%84%D9%85%D8%B3%D9%86%D8%AF%20%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D9%85%D9%8A%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B5%D9%8A%D9%84%20%D8%AC%D9%84%D8%AF%203">Jilid 3</a></li>
+  		</ul>
+		</div> 
+	</section>
+	<section class="accordion-item">
+		<h6>Musnad Ahmad</h6>
+		<div class="accordion-item-content">
+  		<ul><li><a target="layar" href="https://archive.org/stream/WAQmusndaWAQ/musnda01">Jilid 1</a></li>
+   			<li><a target="layar" href="https://archive.org/stream/WAQmusndaWAQ/musnda02">Jilid 2</a></li>
+     <li><a target="layar" href="https://archive.org/stream/WAQmusndaWAQ/musnda03">Jilid 3</a></li>
+     <li><a target="layar" href="https://archive.org/stream/WAQmusndaWAQ/musnda04">Jilid 4</a></li>
+     <li><a target="layar" href="https://archive.org/stream/WAQmusndaWAQ/musnda05">Jilid 5</a></li>
+     <li><a target="layar" href="https://archive.org/stream/WAQmusndaWAQ/musnda06">Jilid 6</a></li>
+     <li><a target="layar" href="https://archive.org/stream/WAQmusndaWAQ/musnda07">Jilid 7</a></li>
+     <li><a target="layar" href="https://archive.org/stream/WAQmusndaWAQ/musnda08">Jilid 8</a></li>
+     <li><a target="layar" href="https://archive.org/stream/WAQmusndaWAQ/musnda09">Jilid 9</a></li>
+     <li><a target="layar" href="https://archive.org/stream/WAQmusndaWAQ/musnda09p">Jilid 9p</a></li>
+     <li><a target="layar" href="https://archive.org/stream/WAQmusndaWAQ/musnda10">Jilid 10</a></li>
+     <li><a target="layar" href="https://archive.org/stream/WAQmusndaWAQ/musnda11">Jilid 11</a></li>
+     <li><a target="layar" href="https://archive.org/stream/WAQmusndaWAQ/musnda12">Jilid 12</a></li>
+     <li><a target="layar" href="https://archive.org/stream/WAQmusndaWAQ/musnda13">Jilid 13</a></li>
+     <li><a target="layar" href="https://archive.org/stream/WAQmusndaWAQ/musnda14">Jilid 14</a></li>
+     <li><a target="layar" href="https://archive.org/stream/WAQmusndaWAQ/musnda15">Jilid 15</a></li>
+     <li><a target="layar" href="https://archive.org/stream/WAQmusndaWAQ/musnda16">Jilid 16</a></li>
+     <li><a target="layar" href="https://archive.org/stream/WAQmusndaWAQ/musnda17">Jilid 17</a></li>
+     <li><a target="layar" href="https://archive.org/stream/WAQmusndaWAQ/musnda18">Jilid 18</a></li>
+     <li><a target="layar" href="https://archive.org/stream/WAQmusndaWAQ/musnda19">Jilid 19</a></li>
+     <li><a target="layar" href="https://archive.org/stream/WAQmusndaWAQ/musnda20">Jilid 20</a></li>
+  		</ul>
+		</div> 
+	</section>
+</div>   
+  
+  
+  <div class="induk" id="konten">
+  <iframe name="layar"><p>Browser anda tidak mendukung iframes!</p></iframe></div>
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+if (prevScrollpos > currentScrollPos) {
+    document.getElementById("barpanel").style.top = "0";
+  } else {
+    document.getElementById("barpanel").style.top = "-60px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+  </body>
+  </html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.card {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  max-height: 500px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+.title {
+  color: grey;
+  font-size: 18px;
+		font-weight: bold;
+}
+
+.card button{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 4px;
+  color: white;
+  background-color: #666666;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;}
+.bundar{border-radius:50%; width:50%; margin-top:15px}
+.card a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+.card a:hover {
+  opacity: 0.7;
+}
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 257px;
+  perspective: 1000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-color: black;
+  color: black;
+}
+
+.flip-card-back {
+    background-color:#DDDDDD;
+    /*fallback color*/ 	
+    background-color:rgba(0,0,0,0.5); 
+    transition:background 0.5s; 
+  color: white;
+  transform: rotateY(180deg);
+}   
+.close {
+  position: sticky;
+  color: red;
+  float: right;
+		display:inline-block;
+		margin-right:5px;
+  font-size: 30px;
+  font-weight: bold;
+  z-index: 100;
+}
+
+.close:hover,
+.close:focus {
+  color: grey;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+      <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script> 
+      <script>
+function togel(×) {
+var element = document.getElementById("balik");
+// element.classList.toggle("flip-card-inner");
+	//element.style.transform = "rotateY(180deg)";
+x.style.transform = "rotateY(180deg)";
+alert (x.style.backface-visibility)
+// element.classList.toggle("flip-card-inner");
+}
+
+
+function profilx(){
+var prfl = document.getElementById("kartux");
+if (prfl.style.dislplay == "none") {
+    prfl.style.display = "block";} 
+else {prfl.style.display="none";}}
+
+</script>
+    </head>
+    <body>
+<div id="kartux" class="card"><span class="close" onclick="profilx()">&times;</span>
+  <div id="kartu" class="flip-card">
+  <div id ="balik" class="flip-card-inner">
+  <div class="flip-card-front">
+  <img class="bundar" src="profil.jpg" alt="Alif" style="width:70%">
+  <button onclick="togel(getElementsByClassName('flip-card-back'))">Hubungi Kami</button> </div> 
+    <div class="flip-card-back">
+<form action="mailto:muhammad.alif@uinbanten.ac.id" method="post" enctype="text/plain">
+<fieldset><legend>Nama:</legend>
+<input type="text" name="name"></fieldset>
+<fieldset><legend>E-mail:</legend>
+<input type="text" name="mail"></fieldset>
+<fieldset><legend>Pesan:</legend>
+<input type="text" name="comment" size="25">
+</fieldset><br><input type="submit" value="Kirim">
+<input type="reset" value="Reset">
+</form>
+    </div>
+  </div>
+</div>
+  <h2>Muhammad Alif</h2>
+  <p class="title">Asosiasi Ilmu Hadis Indonesia</p>
+  <p>UIN Sultan Maulana Hasanuddin Banten</p>
+  <div style="margin: 22px 0;">
+    <a target="layar" href="mailto:muhammad.alif@uinbanten.ac.id?Subject=Salam%20Kenal" target="_top"><i class="fa fa-envelope-square"></i></a> 
+    <a target="layar" href="http://uinbanten.ac.id"><i class="fa fa-university"></i></a>  
+    <a target="layar" href="https://www.asilha.com/"><i class="fa fa-globe"></i></a>  
+    <a target="layar" href="http://facebook.com/TAHDIS"><i class="fa fa-facebook-square"></i></a>  
+  </div> <p><button onclick="togel(getElementsByClassName('flip-card-back'))">Hadis Digital Online All in One</button></p>
+</div>
+</body>
+</html>
